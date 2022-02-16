@@ -8,12 +8,6 @@
     vault_addr: "{{ lookup('env','VAULT_ADDR') }}"
     osp_credentials: "{{ lookup('hashi_vault', 'kv/data/osp_credentials', token=vault_token, url=vault_addr) }}"
   tasks:
-    - name: Ensure hvac is installed for hashicorp
-      package:
-        name: python3-hvac
-        state: present
-      become: true
-
     - debug:
         var: osp_credentials
     
