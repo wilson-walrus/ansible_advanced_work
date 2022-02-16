@@ -9,7 +9,7 @@
   tasks:
     - name: Ensure hvac is installed for hashicorp
       package:
-        name: hvac
+        name: python3-hvac
         state: present
       become: true
 
