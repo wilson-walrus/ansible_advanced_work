@@ -1,6 +1,7 @@
 ---
 - name: Lookup OSP Instance Data with Hashi Vault
-  hosts: bastions
+  hosts: localhost
+  connection: local
   gather_facts: false
   vars:
     vault_token: "{{ lookup('env','VAULT_TOKEN') }}"
