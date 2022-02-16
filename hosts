@@ -1,0 +1,66 @@
+[all]
+ 
+elk.example.com ansible_host=192.168.50.76
+ 
+vault.example.com ansible_host=192.168.50.124
+ 
+managednode2.example.com ansible_host=192.168.50.106
+ 
+execution1.example.com ansible_host=192.168.50.158
+ 
+db.example.com ansible_host=192.168.50.217
+ 
+control2.example.com ansible_host=192.168.50.46
+ 
+execution2.example.com ansible_host=192.168.50.109
+ 
+control3.example.com ansible_host=192.168.50.20
+ 
+ah.example.com ansible_host=192.168.50.60
+ 
+control1.example.com ansible_host=192.168.50.98
+ 
+managednode1.example.com ansible_host=192.168.50.179
+ 
+bastion.example.com ansible_host=192.168.50.129
+ 
+satellite.example.com ansible_host=192.168.50.215
+[ungrouped]
+[elkstack]
+ 
+elk.example.com ansible_host=192.168.50.76
+[vaults]
+ 
+vault.example.com ansible_host=192.168.50.124
+[managednodes]
+ 
+managednode2.example.com ansible_host=192.168.50.106
+ 
+managednode1.example.com ansible_host=192.168.50.179
+[executionnodes]
+ 
+execution1.example.com ansible_host=192.168.50.158
+ 
+execution2.example.com ansible_host=192.168.50.109
+[dbs]
+ 
+db.example.com ansible_host=192.168.50.217
+[automationcontrollers]
+ 
+control2.example.com ansible_host=192.168.50.46
+ 
+control3.example.com ansible_host=192.168.50.20
+ 
+control1.example.com ansible_host=192.168.50.98
+[automationhubs]
+ 
+ah.example.com ansible_host=192.168.50.60
+[bastions]
+ 
+bastion.example.com ansible_host=192.168.50.129
+[controls]
+ 
+bastion.example.com ansible_host=192.168.50.129
+[satellites]
+ 
+satellite.example.com ansible_host=192.168.50.215
