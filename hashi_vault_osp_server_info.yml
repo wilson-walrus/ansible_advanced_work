@@ -1,11 +1,11 @@
 ---
 - name: Lookup OSP Instance Data with Hashi Vault
-  hosts: bastions
+  hosts: localhost
   gather_facts: false
   vars:
-    vault_token: "{{ lookup('env','VAULT_TOKEN') }}"
-    vault_addr: "{{ lookup('env','VAULT_ADDR') }}"
-    osp_credentials: "{{ lookup('hashi_vault', 'kv/data/osp_credentials', token=vault_token, url=vault_addr) }}"
+#    vault_token: "{{ lookup('env','VAULT_TOKEN') }}"
+#    vault_addr: "{{ lookup('env','VAULT_ADDR') }}"
+    osp_credentials: "{{ lookup('hashi_vault', 'kv/data/osp_credentials') }}" #, token=vault_token, url=vault_addr) }}"
   tasks:
     - debug:
         var: osp_credentials
